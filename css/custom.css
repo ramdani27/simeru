@@ -1,0 +1,19 @@
+.bootstrap-select  li.selected a{
+    background: #3086E4;
+    color: white;
+}
+.bootstrap-select  li.selected a:hover{
+    background: #256CB8;
+}
+.modal{
+	margin-top: 70px;
+}
+
+section.dashboard-counts .h-number {
+  font-size: 2em;
+  font-weight: 300;
+  padding: 18px 0;
+}
+section.dashboard-counts .h-number strong {
+  font-weight: 700;
+}
