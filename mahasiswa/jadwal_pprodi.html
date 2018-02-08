@@ -183,7 +183,7 @@
                               <td data-title="Mata Kuliah">Struktur Data</td>
                               <td data-title="Kelas">A</td>
                               <td data-title="SKS">3</td>
-                              <td data-title="Jam"><a href="#">1,2</a></td>
+                              <td data-title="Jam"><a href="#" data-toggle="tooltip" title="07.00-07.50 , 07.50-08.40">1,2</a></td>
                               <td data-title="Semester">III</td>
                               <td data-title="Dosen">Drs., Wahyu Pujiyono, M. Kom</td>
                               <td data-title="Ruang">3.1.313</td>
@@ -194,7 +194,7 @@
                               <td data-title="Mata Kuliah">Pemrograman Berorientasi Objek</td>
                               <td data-title="Kelas">A</td>
                               <td data-title="SKS">2</td>
-                              <td data-title="Jam"><a href="#">9,10</a></td>
+                              <td data-title="Jam"><a href="#"  data-toggle="tooltip" title="07.00-07.50 , 07.50-08.40">9,10</a></td>
                               <td data-title="Semester">III</td>
                               <td data-title="Dosen">Drs., Tedy Setiadi, M.T.</td>
                               <td data-title="Ruang">3.1.217</td>
@@ -1431,5 +1431,10 @@
     <script src="../js/charts-home.js"></script>
     <script src="../js/front.js"></script>
     <script src="../js/jadwal_dosen.js"></script>
+    <script type="text/javascript">
+      $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
   </body>
 </html>
