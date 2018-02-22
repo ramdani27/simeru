@@ -159,129 +159,131 @@
                     </div>
                       
                     <div class="card-body">
-                      <button type="submit" class="btn btn-sm" style="margin-bottom: 5px;">Cetak</button>
-                      <div id="no-more-tables">
-                        <table id="myTable" class="table table-striped table-sm">
-                          <thead>
-                            <tr>
-                              <th>Hari</th>
-                              <th>Kode</th>
-                              <th>Mata Kuliah</th>
-                              <th>Kelas</th>
-                              <th>SKS</th>
-                              <th>Jam</th>
-                              <th>Semester</th>
-                              <th>Dosen</th>
-                              <th>Ruang</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td data-title="Hari" rowspan="">Senin</td>
-                              <td data-title="Kode">1835131</td>
-                              <td data-title="Mata Kuliah">Struktur Data</td>
-                              <td data-title="Kelas">A</td>
-                              <td data-title="SKS">3</td>
-                              <td data-title="Jam"><a href="#">1,2</a></td>
-                              <td data-title="Semester">III</td>
-                              <td data-title="Dosen">Drs., Wahyu Pujiyono, M. Kom</td>
-                              <td data-title="Ruang">3.1.313</td>
-                            </tr>
-                            <tr>
-                              <td rowspan=""></td>
-                              <td data-title="Kode">1835431</td>
-                              <td data-title="Mata Kuliah">Pemrograman Berorientasi Objek</td>
-                              <td data-title="Kelas">A</td>
-                              <td data-title="SKS">2</td>
-                              <td data-title="Jam"><a href="#">9,10</a></td>
-                              <td data-title="Semester">III</td>
-                              <td data-title="Dosen">Drs., Tedy Setiadi, M.T.</td>
-                              <td data-title="Ruang">3.1.217</td>
-                            </tr>
-                            
-                            <tr>
-                              <td data-title="Hari" rowspan="">Selasa</td>
-                              <td data-title="Kode">1876031</td>
-                              <td data-title="Mata Kuliah">Penjaminan Kualitas Perangkat Lunak</td>
-                              <td data-title="Kelas">B</td>
-                              <td data-title="SKS">3</td>
-                              <td data-title="Jam"><a href="#">1,2</a></td>
-                              <td data-title="Semester">III</td>
-                              <td data-title="Dosen">Ardiansyah, S.T., M.Cs.</td>
-                              <td data-title="Ruang">3.1.302</td>
-                            </tr>
-                            <tr>
-                              <td rowspan=""></td>
-                              <td data-title="Kode">1855431</td>
-                              <td data-title="Mata Kuliah">Pemrograman Mobile</td>
-                              <td data-title="Kelas">D</td>
-                              <td data-title="SKS">3</td>
-                              <td data-title="Jam"><a href="#">3,4</a></td>
-                              <td data-title="Semester">V</td>
-                              <td data-title="Dosen">Ika Arfiani, S.T., M.Cs.  </td>
-                              <td data-title="Ruang">3.1.313</td>
-                            </tr>
-                            <tr>
-                              <td data-title="Hari" rowspan="">Rabu</td>
-                              <td data-title="Kode">1876031</td>
-                              <td data-title="Mata Kuliah">Penjaminan Kualitas Perangkat Lunak</td>
-                              <td data-title="Kelas">B</td>
-                              <td data-title="SKS">3</td>
-                              <td data-title="Jam"><a href="#">1,2</a></td>
-                              <td data-title="Semester">III</td>
-                              <td data-title="Dosen">Ardiansyah, S.T., M.Cs.</td>
-                              <td data-title="Ruang">3.1.302</td>
-                            </tr>
-                             <tr>
-                              <td rowspan=""></td>
-                              <td data-title="Kode">0015220</td>
-                              <td data-title="Mata Kuliah">Pancasila</td>
-                              <td data-title="Kelas">D</td>
-                              <td data-title="SKS">2</td>
-                              <td data-title="Jam"><a href="#">1,2</a></td>
-                              <td data-title="Semester">I</td>
-                              <td data-title="Dosen">N. Satria Abdi, S,H., M.H.</td>
-                              <td data-title="Ruang">4.1.3.21</td>
-                            </tr>
-                            <tr>
-                              <td rowspan=""></td>
-                              <td data-title="Kode">1815230</td>
-                              <td data-title="Mata Kuliah"> Dasar Pemrograman</td>
-                              <td data-title="Kelas">B</td>
-                              <td data-title="SKS">2</td>
-                              <td data-title="Jam"><a href="#">1,2,3</a></td>
-                              <td data-title="Semester">I</td>
-                              <td data-title="Dosen">Eko Aribowo, S.T., M.Kom.</td>
-                              <td data-title="Ruang">4.1.2.10</td>
-                            </tr>
-                            
-                             <tr>
-                              <td data-title="Hari" rowspan="">Kamis</td>
-                              <td data-title="Kode">1876031</td>
-                              <td data-title="Mata Kuliah">Penjaminan Kualitas Perangkat Lunak</td>
-                              <td data-title="Kelas">B</td>
-                              <td data-title="SKS">3</td>
-                              <td data-title="Jam"><a href="#">1,2</a></td>
-                              <td data-title="Semester">III</td>
-                              <td data-title="Dosen">Ardiansyah, S.T., M.Cs.</td>
-                              <td data-title="Ruang">3.1.302</td>
-                            </tr>
-                            
-                             <tr>
-                              <td data-title="Hari" rowspan="">Jum'at</td>
-                              <td data-title="Status" colspan="8" style="text-align: center;">---Tidak ada kuliah---</td>
+                      <button onclick="myFunction('printAble')" class="btn btn-sm" style="margin-bottom: 5px;">Cetak</button>
+                      <div id="printAble">
+                        <div id="no-more-tables">
+                          <table id="myTable" class="table table-striped table-sm">
+                            <thead>
+                              <tr>
+                                <th>Hari</th>
+                                <th>Kode</th>
+                                <th>Mata Kuliah</th>
+                                <th>Kelas</th>
+                                <th>SKS</th>
+                                <th>Jam</th>
+                                <th>Semester</th>
+                                <th>Dosen</th>
+                                <th>Ruang</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td data-title="Hari" rowspan="">Senin</td>
+                                <td data-title="Kode">1835131</td>
+                                <td data-title="Mata Kuliah">Struktur Data</td>
+                                <td data-title="Kelas">A</td>
+                                <td data-title="SKS">3</td>
+                                <td data-title="Jam"><a href="#">1,2</a></td>
+                                <td data-title="Semester">III</td>
+                                <td data-title="Dosen">Drs., Wahyu Pujiyono, M. Kom</td>
+                                <td data-title="Ruang">3.1.313</td>
+                              </tr>
+                              <tr>
+                                <td rowspan=""></td>
+                                <td data-title="Kode">1835431</td>
+                                <td data-title="Mata Kuliah">Pemrograman Berorientasi Objek</td>
+                                <td data-title="Kelas">A</td>
+                                <td data-title="SKS">2</td>
+                                <td data-title="Jam"><a href="#">9,10</a></td>
+                                <td data-title="Semester">III</td>
+                                <td data-title="Dosen">Drs., Tedy Setiadi, M.T.</td>
+                                <td data-title="Ruang">3.1.217</td>
+                              </tr>
                               
-                            </tr>
-                            
-                             <tr>
-                              <td data-title="Hari" rowspan="">Sabtu</td>
-                              <td data-title="Kode" colspan="8" style="text-align: center;">---Tidak ada kuliah---</td>
+                              <tr>
+                                <td data-title="Hari" rowspan="">Selasa</td>
+                                <td data-title="Kode">1876031</td>
+                                <td data-title="Mata Kuliah">Penjaminan Kualitas Perangkat Lunak</td>
+                                <td data-title="Kelas">B</td>
+                                <td data-title="SKS">3</td>
+                                <td data-title="Jam"><a href="#">1,2</a></td>
+                                <td data-title="Semester">III</td>
+                                <td data-title="Dosen">Ardiansyah, S.T., M.Cs.</td>
+                                <td data-title="Ruang">3.1.302</td>
+                              </tr>
+                              <tr>
+                                <td rowspan=""></td>
+                                <td data-title="Kode">1855431</td>
+                                <td data-title="Mata Kuliah">Pemrograman Mobile</td>
+                                <td data-title="Kelas">D</td>
+                                <td data-title="SKS">3</td>
+                                <td data-title="Jam"><a href="#">3,4</a></td>
+                                <td data-title="Semester">V</td>
+                                <td data-title="Dosen">Ika Arfiani, S.T., M.Cs.  </td>
+                                <td data-title="Ruang">3.1.313</td>
+                              </tr>
+                              <tr>
+                                <td data-title="Hari" rowspan="">Rabu</td>
+                                <td data-title="Kode">1876031</td>
+                                <td data-title="Mata Kuliah">Penjaminan Kualitas Perangkat Lunak</td>
+                                <td data-title="Kelas">B</td>
+                                <td data-title="SKS">3</td>
+                                <td data-title="Jam"><a href="#">1,2</a></td>
+                                <td data-title="Semester">III</td>
+                                <td data-title="Dosen">Ardiansyah, S.T., M.Cs.</td>
+                                <td data-title="Ruang">3.1.302</td>
+                              </tr>
+                               <tr>
+                                <td rowspan=""></td>
+                                <td data-title="Kode">0015220</td>
+                                <td data-title="Mata Kuliah">Pancasila</td>
+                                <td data-title="Kelas">D</td>
+                                <td data-title="SKS">2</td>
+                                <td data-title="Jam"><a href="#">1,2</a></td>
+                                <td data-title="Semester">I</td>
+                                <td data-title="Dosen">N. Satria Abdi, S,H., M.H.</td>
+                                <td data-title="Ruang">4.1.3.21</td>
+                              </tr>
+                              <tr>
+                                <td rowspan=""></td>
+                                <td data-title="Kode">1815230</td>
+                                <td data-title="Mata Kuliah"> Dasar Pemrograman</td>
+                                <td data-title="Kelas">B</td>
+                                <td data-title="SKS">2</td>
+                                <td data-title="Jam"><a href="#">1,2,3</a></td>
+                                <td data-title="Semester">I</td>
+                                <td data-title="Dosen">Eko Aribowo, S.T., M.Kom.</td>
+                                <td data-title="Ruang">4.1.2.10</td>
+                              </tr>
                               
-                            </tr>
-                           
-                          </tbody>
-                        </table>
+                               <tr>
+                                <td data-title="Hari" rowspan="">Kamis</td>
+                                <td data-title="Kode">1876031</td>
+                                <td data-title="Mata Kuliah">Penjaminan Kualitas Perangkat Lunak</td>
+                                <td data-title="Kelas">B</td>
+                                <td data-title="SKS">3</td>
+                                <td data-title="Jam"><a href="#">1,2</a></td>
+                                <td data-title="Semester">III</td>
+                                <td data-title="Dosen">Ardiansyah, S.T., M.Cs.</td>
+                                <td data-title="Ruang">3.1.302</td>
+                              </tr>
+                              
+                               <tr>
+                                <td data-title="Hari" rowspan="">Jum'at</td>
+                                <td data-title="Status" colspan="8" style="text-align: center;">---Tidak ada kuliah---</td>
+                                
+                              </tr>
+                              
+                               <tr>
+                                <td data-title="Hari" rowspan="">Sabtu</td>
+                                <td data-title="Kode" colspan="8" style="text-align: center;">---Tidak ada kuliah---</td>
+                                
+                              </tr>
+                             
+                            </tbody>
+                          </table>
 
+                      </div>
                     </div>
                   </div>
                 </div> <!-- col-lg-12 -->                 
@@ -366,5 +368,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="../js/charts-home.js"></script>
     <script src="../js/front.js"></script>
+    <script src="../js/jadwal_prodi.js"></script>
   </body>
 </html>
