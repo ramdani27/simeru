@@ -3,29 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SIMERU</title>
+    <title>SIMERU | Jadwal Ruang</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
     <!-- Google fonts - Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="../css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/jadwal_dosen.css">
     <!-- Favicon-->
     <link rel="shortcut icon" type="image/png" href="../img/uadlogo.png"/>
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Font Awesome CDN-->
     <!-- you can replace it by local Font Awesome-->
-
-     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
-
     <script src="http://code.gijgo.com/1.6.1/js/gijgo.js" type="text/javascript"></script>
     <link href="http://code.gijgo.com/1.6.1/css/gijgo.css" rel="stylesheet" type="text/css" />
     <script src="https://use.fontawesome.com/99347ac47f.js"></script>
-
     <!-- Font Icons CSS-->
     <link rel="stylesheet" href="../css/icons.css">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
@@ -33,11 +31,10 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
-    
     <div class="page home-page">
       <!-- Main Navbar-->
       <header class="header">
-        <nav class="navbar">
+       <nav class="navbar">
           <!-- Search Box-->
           <div class="search-box">
             <button class="dismiss"><i class="icon-close"></i></button>
@@ -49,7 +46,7 @@
             <div class="navbar-holder d-flex align-items-center justify-content-between">
               <!-- Navbar Header-->
               <div class="navbar-header">
-                <!-- Navbar Brand --><a href="dosen_index_account.html" class="navbar-brand">
+                <!-- Navbar Brand --><a href="index_account.html" class="navbar-brand">
                   <div class="brand-text brand-big hidden-lg-down"><span>SIMERU </span><strong> UAD</strong></div>
                   <div class="brand-text brand-small"><strong>SIMERU</strong></div></a>
                 <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
@@ -59,19 +56,19 @@
                 <!-- Search-->
                 <!-- <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li> -->
                 <!-- Notifications-->
-                <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell-o"></i><span class="badge bg-red">2</span></a>
+                <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell-o"></i><span class="badge bg-red">12</span></a>
                   <ul aria-labelledby="notifications" class="dropdown-menu">
                     <li><a rel="nofollow" href="#" class="dropdown-item"> 
                         <div class="notification">
-                          <div class="notification-content"><i class="fa fa-check bg-green"></i>Peminjaman Ruang Diterima </div>
+                          <div class="notification-content"><i class="fa fa-envelope bg-green"></i>You have 6 new messages </div>
                           <div class="notification-time"><small>4 minutes ago</small></div>
                         </div></a></li>
                     <li><a rel="nofollow" href="#" class="dropdown-item"> 
                         <div class="notification">
-                          <div class="notification-content"><i class="fa fa-window-close bg-red"></i>Peminjaman Ruang Ditolak</div>
+                          <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
                           <div class="notification-time"><small>4 minutes ago</small></div>
                         </div></a></li>
-                    <!-- <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
                         <div class="notification">
                           <div class="notification-content"><i class="fa fa-upload bg-orange"></i>Server Rebooted</div>
                           <div class="notification-time"><small>4 minutes ago</small></div>
@@ -80,7 +77,7 @@
                         <div class="notification">
                           <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
                           <div class="notification-time"><small>10 minutes ago</small></div>
-                        </div></a></li> -->
+                        </div></a></li>
                     <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>view all notifications                                            </strong></a></li>
                   </ul>
                 </li>
@@ -88,17 +85,17 @@
                 <!-- <li class="nav-item dropdown"> <a id="messages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-envelope-o"></i><span class="badge bg-orange">10</span></a>
                   <ul aria-labelledby="notifications" class="dropdown-menu">
                     <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
-                        <div class="msg-profile"> <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-profile"> <img src="../img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
                         <div class="msg-body">
                           <h3 class="h5">Jason Doe</h3><span>Sent You Message</span>
                         </div></a></li>
                     <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
-                        <div class="msg-profile"> <img src="img/avatar-2.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-profile"> <img src="../img/avatar-2.jpg" alt="..." class="img-fluid rounded-circle"></div>
                         <div class="msg-body">
                           <h3 class="h5">Frank Williams</h3><span>Sent You Message</span>
                         </div></a></li>
                     <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
-                        <div class="msg-profile"> <img src="img/avatar-3.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-profile"> <img src="../img/avatar-3.jpg" alt="..." class="img-fluid rounded-circle"></div>
                         <div class="msg-body">
                           <h3 class="h5">Ashley Wood</h3><span>Sent You Message</span>
                         </div></a></li>
@@ -113,8 +110,9 @@
         </nav>
       </header>
       <div class="page-content d-flex align-items-stretch">
+
         <!-- Side Navbar -->
-        <nav class="side-navbar">
+         <nav class="side-navbar">
           <!-- Sidebar Header-->
           <div class="sidebar-header d-flex align-items-center">
             <div class="avatar"><img src="../img/dosen/arditopi.jpg" alt="..." class="img-fluid rounded-circle"></div>
@@ -133,9 +131,9 @@
                 <li><a href="jadwal_ruang.html">Jadwal Ruang</a></li>
               </ul>
             </li> -->
-            <li class="active"> <a href="dosen_buat_kuliah_kosong.html"> <i class="icon-grid"></i>Buat Kuliah Kosong</a></li>
+            <li> <a href="dosen_buat_kuliah_kosong.html"> <i class="icon-grid"></i>Buat Kuliah Kosong</a></li>
             <li> <a href="dosen_jadwal_ruang.html"> <i class="icon-grid"></i>Pinjam Ruang Kuliah</a></li>
-            <li> <a href="forms.html"> <i class="icon-padnote"></i>Laporan Peminjaman Ruang </a></li>
+            <li class="active"> <a href="dosen_laporan_peminjaman.html"> <i class="icon-padnote"></i>Laporan Peminjaman Ruang </a></li>
             <li> <a href="portal_page.html"> <i class="icon-interface-windows"></i>Kembali ke PORTAL</a></li>
             <!-- <li> <a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
             <li> <a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li> -->
@@ -145,84 +143,71 @@
          <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
-              <h2 class="no-margin-bottom">Buat Informasi Kuliah Kosong</h2>
+              <h2 class="no-margin-bottom">Laporan Peminjaman Ruang</h2>
             </div>
           </header>
-          <div id="success-alert" class="alert alert-success" role="alert" style="position: absolute; z-index: 1000; margin: 10px;">
-            <strong>Berhasil!</strong> Kuliah kosong berhasil dibagikan ke mahasiswa.
-          </div>
           
-          <!-- Form Elements -->
-              <section class="updates">
-                <div class="col-lg-12">
-                  <div class="card">
-                    <div class="card-header d-flex align-items-center">
-                      <h3 class="h4">Form Kuliah Kosong</h3>
-                    </div>
-                    <div class="card-body">
-                      <form class="form-horizontal">
+         <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+              <div id="printAble">
+              <div class="row bg-white has-shadow">
+                <div class="col-sm-12">
+                  <h3>Data Peminjaman Ruang 1.2.205 ITC</h3>
+                </div>
+              </div>
+               <div class="bg-white has-shadow"> 
+                <div class="form-horizontal">
                         <!-- <div class="form-group row">
                           <label class="col-sm-3 form-control-label">Pilih Tanggal</label>
                           <div class="col-sm-9">
-                            <input id="datepicker" width="280px" />
+                            <input placeholder="Pilih Tanggal" id="datepicker" width="280px" />
                           </div>
                         </div>   -->                   
                         <div class="line"></div>
                         <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Pilih Kuliah</label>
+                          <label class="col-sm-3 form-control-label">Pada Tanggal:</label>
                           <div class="col-sm-9 select">
-                            <select name="account" class="form-control">
-                              <option>Metodelogi Penelitian</option>
-                              <option>Interaksi Manusia & Komputer</option>
-                              <option>Technopreneurship</option>
-                            </select>
+                            <p>16 Maret 2017</p>
                           </div>
                         </div>
                         <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Pertemuan </label>
+                          <label class="col-sm-3 form-control-label">Jam: </label>
                           <div class="col-sm-9 select">
-                            <select name="account" class="form-control">
-                              <option>Minggu ke 1</option>
-                              <option>Minggu ke 2</option>
-                              <option>Minggu ke 3</option>
-                              <option>Minggu ke 4</option>
-                              <option>Minggu ke 5</option>
-                              <option>Minggu ke 6</option>
-                              <option>Minggu ke 7</option>
-                              <option>Minggu ke 8</option>
-                              <option>Minggu ke 9</option>
-                              <option>Minggu ke 10</option>
-                              <option>Minggu ke 11</option>
-                              <option>Minggu ke 12</option>
-                              <option>Minggu ke 13</option>
-                              <option>Minggu ke 14</option>
-                            </select>
+                            <p>07.00-07.50</p>
                           </div>
                         </div>
                         <div class="line"></div>
                         <div class="form-group row">
-                          <label class="col-sm-3 form-control-label" for="exampleTextarea">Keterangan</label>
+                          <label class="col-sm-3 form-control-label" >Untuk Keperluan: </label>
                           <div class="col-sm-9">
-                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                            <p>Kuliah pengganti Teknopreneurship pertemuan ke-8</p>
+                          </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="form-group row">
+                          <label class="col-sm-3 form-control-label" >Setatus: </label>
+                          <div class="col-sm-9">
+                            <h3><span class="badge bg-blue">Terverifikasi</span></h3>
                           </div>
                         </div>
                         <div class="line"></div>
                         <div class="form-group row">
                           <div class="col-sm-4 offset-sm-3">
-                            <button type="submit" class="btn btn-primary">Share</button>
+                            <button onclick="myFunction('printAble')" class="btn btn-sm" style="margin-bottom: 5px;" type="button" class="btn btn-primary">Cetak</button>
                           </div>
                         </div>
-                      </form>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </section>
+              </div>
+          </section>
+
+
           <!-- Page Footer-->
           <footer class="main-footer">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-12 text-center">
-                  <p>Universitas Ahmad Dahlan Yogyakarta &copy; 2017-2019</p>
+                  <p>SIMERU Universitas Ahmad Dahlan Yogyakarta &copy; 2017-2019</p>
                 </div>
               </div>
             </div>
@@ -231,24 +216,21 @@
       </div>
     </div>
     <!-- Javascript files-->
-    <script type="text/javascript">
-      
+     <script type="text/javascript">
         $('#datepicker').datepicker({
             uiLibrary: 'bootstrap4',
-            iconsLibrary: 'fontawesome'
+            iconsLibrary: 'fontawesome',
         });
-
-        $("#success-alert").fadeTo(3000, 500).slideUp(500, function(){
-            $("#success-alert").slideUp(500);
-        });
-
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../assets/moment/moment.js"></script>
-    <script src="../js/tether.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.cookie.js"> </script>
-    <script src="../js/jquery.validate.min.js"></script>
-    <script src="../js/front.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"> </script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <script src="js/front.js"></script>
+    <script src="js/jadwal_dosen.js"></script>
+    <script src="../js/jadwal_prodi.js"></script>
   </body>
 </html>
